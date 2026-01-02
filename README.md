@@ -52,7 +52,7 @@ Repositori ini menyediakan 3 artefak utama yang siap pakai:
 ## Cara Menggunakan
 
 1.  **Clone atau Download** repositori ini.
-2.  Buka folder `/files` atau klik link download di [K1 UX Research Toolkit]([https://username.github.io/repo](https://ux-research-tool.vercel.app/).
+2.  Buka folder `/files` atau klik link download di [K1 UX Research Toolkit](https://ux-research-tool.vercel.app/).
 3.  **Langkah 1 (Persona):** Lakukan wawancara user, lalu rangkum datanya ke dalam *Persona Template*.
 4.  **Langkah 2 (Journey):** Gunakan data tersebut untuk memetakan *User Journey Map*.
 5.  **Langkah 3 (Audit):** Evaluasi desain aplikasi Anda menggunakan *Usability Checklist*.
