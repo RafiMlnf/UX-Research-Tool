@@ -1,6 +1,6 @@
-# UX Research Toolkit (SE-02)
+<img width="1286" height="412" alt="Screenshot 2026-01-02 174610" src="https://github.com/user-attachments/assets/eb751508-29da-4405-98b0-14abec629877" />
 
-![Project Banner](assets/preview-toolkit.png) > **"Riset UX yang rapi, konsisten, dan gampang dipakai."**
+# UX Research Toolkit (SE-02)
 >
 > Sebuah toolkit komprehensif berisi template, checklist, dan panduan untuk membantu tim pengembang software melakukan riset pengguna yang terstruktur dan menghasilkan insight yang actionable.
 
@@ -18,7 +18,7 @@ Project ini dikerjakan oleh kelompok 1 dengan pembagian peran:
 | :--- | :--- | :--- |
 | 312210401 | Abid Lu'Ay Raihan Taufik | Peneliti Literatur |
 | 312210382 | Rafi Maulana Firdaus | Perancang Produk | 
-| 312210449| Afrizal Fajrianto Anggara Sakti | Dokumentator & Presenter |
+| 312210449 | Afrizal Fajrianto Anggara Sakti | Dokumentator & Presenter |
 
 ---
 
