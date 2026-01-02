@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>UX Research Toolkit — Persona • Journey Map • Usability Checklist</title>
+    <meta name="description" content="Landing page sederhana untuk UX Research Toolkit: template Persona, Journey Map, dan Usability Checklist beserta panduan penggunaan." />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="nav">
+      <div class="container">
+        <div class="nav-inner">
+          <a class="brand" href="#top" aria-label="UX Research Toolkit">
+            <div class="logo"><img src="assets/logo.png" alt="UX Research Toolkit logo" loading="lazy" /></div>
+            <div>
+              <div class="title">UX Research Toolkit</div>
+              <span class="subtitle">Persona • Journey Map • Usability Checklist</span>
+            </div>
+          </a>
+
+          <nav class="links" aria-label="Navigasi">
+            <a href="#tentang">Tentang</a>
+            <a href="#komponen">Komponen</a>
+            <a href="#cara-pakai">Cara Pakai</a>
+            <a href="#download">Download</a>
+            <a href="#faq">FAQ</a>
+            <a href="#tim">Tim</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <main id="top" class="container">
+      <header class="hero">
+        <div class="hero-grid">
+          <div class="card hero-left">
+            <span class="pill">Toolkit • Tugas SE-02</span>
+            <h1>UX Research Toolkit</h1>
+            <p class="lead">Membantu tim melakukan UX Research secara terstruktur: mulai dari menyusun <b>Persona</b>, memetakan <b>User Journey Map</b>, hingga mengecek <b>Usability</b> lewat checklist.</p>
+
+            <div class="hero-actions">
+              <a class="btn primary" href="#download">Unduh Toolkit</a>
+              <a class="btn" href="#komponen">Lihat Komponen</a>
+              <button class="btn secondary" id="openPreviewBtn" type="button">Lihat Contoh</button>
+            </div>
+
+            <div class="meta" aria-label="Info singkat">
+              <p>Tiga komponen utama | Template + panduan | Checklist usability</p>
+            </div>
+
+            <div class="grid-3">
+              <div class="feature">
+                <strong>Praktis</strong>
+                <p>Format siap isi untuk kebutuhan riset cepat.</p>
+              </div>
+              <div class="feature">
+                <strong>Terstruktur</strong>
+                <p>Alur riset dari data → insight → keputusan.</p>
+              </div>
+              <div class="feature">
+                <strong>Reusable</strong>
+                <p>Dokumen bisa dipakai ulang untuk proyek lain.</p>
+              </div>
+            </div>
+          </div>
+
+          <aside class="card hero-right">
+            <div class="mini">
+              <h3>Target Pengguna</h3>
+              <p>Pemda/SPBE, fintech, e-commerce, dan tim pengembang produk digital.</p>
+            </div>
+            <div class="mini">
+              <h3>Cocok untuk</h3>
+              <p>Riset awal kebutuhan pengguna, perbaikan UX, atau evaluasi usability.</p>
+            </div>
+            <div class="mini">
+              <h3>Output</h3>
+              <p>Dokumen persona, peta perjalanan pengguna, dan daftar temuan usability.</p>
+            </div>
+            <div class="mini">
+              <h3>Format</h3>
+              <p>Doc/Slides/Sheet (atau PDF) — bisa disesuaikan kebutuhan tim.</p>
+            </div>
+          </aside>
+        </div>
+      </header>
+
+      <section id="tentang">
+        <div class="section-title">
+          <div>
+            <h2>Tentang Toolkit</h2>
+            <p>Ringkasnya: ini “kotak alat” untuk riset UX.</p>
+          </div>
+          <span class="pill">Fokus: memahami kebutuhan pengguna</span>
+        </div>
+
+        <div class="two-col">
+          <div class="card pad">
+            <p class="muted m0">
+              UX Research Toolkit adalah kumpulan <b>template</b>, <b>checklist</b>, dan <b>panduan singkat</b> agar proses riset UX bisa dilakukan secara konsisten. Dengan toolkit, tim punya struktur kerja yang jelas—mulai dari
+              mengidentifikasi tipe pengguna, memetakan journey, sampai mengevaluasi masalah usability.
+            </p>
+            <ul class="list">
+              <li>Meminimalkan riset “asal tanya” tanpa dokumentasi.</li>
+              <li>Membantu tim menyusun insight yang bisa ditindaklanjuti.</li>
+              <li>Mudah diadopsi untuk proyek kecil sampai menengah.</li>
+            </ul>
+          </div>
+
+          <div class="card pad">
+            <p class="m0"><b>Masalah yang sering terjadi</b></p>
+            <ul class="list">
+              <li>Metode riset dipilih tanpa pertimbangan yang jelas.</li>
+              <li>Hasil riset tercecer dan tidak standar.</li>
+              <li>Kesulitan menjelaskan “kenapa fitur ini dibutuhkan”.</li>
+            </ul>
+            <p class="muted mt10">Toolkit membantu mengubah proses itu menjadi alur yang tertata.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="komponen">
+        <div class="section-title">
+          <div>
+            <h2>Komponen Toolkit</h2>
+            <p>3 komponen utama yang saling terhubung.</p>
+          </div>
+        </div>
+
+        <div class="grid-3">
+          <div class="card pad">
+            <h3 class="h3">1. Template Persona</h3>
+            <p class="muted mt0 mb10">Untuk merangkum tipe pengguna utama: tujuan, kebutuhan, pain points, dan konteks.</p>
+            <ul class="list">
+              <li>Profil singkat pengguna</li>
+              <li>Goals & pain points</li>
+              <li>Kebutuhan fitur/informasi</li>
+            </ul>
+          </div>
+
+          <div class="card pad">
+            <h3 class="h3">2. User Journey Map</h3>
+            <p class="muted mt0 mb10">Untuk memetakan langkah pengguna dari awal sampai selesai, beserta emosi & kendalanya.</p>
+            <ul class="list">
+              <li>Tahapan journey</li>
+              <li>Touchpoints</li>
+              <li>Pain points & peluang</li>
+            </ul>
+          </div>
+
+          <div class="card pad">
+            <h3 class="h3">3. Checklist Usability</h3>
+            <p class="muted mt0 mb10">Untuk mengecek apakah sistem mudah dipahami, konsisten, dan minim error.</p>
+            <ul class="list">
+              <li>Navigasi & konsistensi</li>
+              <li>Kejelasan informasi</li>
+              <li>Feedback & error handling</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="cara-pakai">
+        <div class="section-title">
+          <div>
+            <h2>Cara Menggunakan</h2>
+            <p>Alur sederhana: data → persona → journey → cek usability.</p>
+          </div>
+          <span class="pill">Estimasi: 1–3 hari (mini-riset)</span>
+        </div>
+
+        <div class="two-col">
+          <div class="card pad">
+            <ol class="list">
+              <li><b>Kumpulkan data</b>: wawancara singkat / observasi / survei kecil.</li>
+              <li><b>Isi Persona</b>: rangkum pengguna utama dan masalahnya.</li>
+              <li><b>Buat Journey Map</b>: susun tahapan, touchpoint, pain point, peluang.</li>
+              <li><b>Checklist Usability</b>: cek skenario dan catat temuan.</li>
+              <li><b>Rangkum insight</b>: prioritas perbaikan (quick wins vs. effort besar).</li>
+            </ol>
+          </div>
+
+          <div class="card pad">
+            <p class="m0"><b>Tips cepat</b></p>
+            <ul class="list">
+              <li>Mulai dari 1 persona dulu (yang paling dominan).</li>
+              <li>Journey map 5–7 langkah sudah cukup untuk mini-riset.</li>
+              <li>Checklist usability fokus ke skenario paling sering dipakai.</li>
+              <li>Catat 3 hal: masalah, dampak, saran perbaikan.</li>
+            </ul>
+            <p class="muted mt10">Tambahkan kolom “evidence” (kutipan/screenshot) biar lebih kuat.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="preview">
+        <div class="section-title">
+          <div>
+            <h2>Contoh Screenshot</h2>
+            <p>Klik salah satu kartu untuk melihat preview.</p>
+          </div>
+        </div>
+
+        <div class="shots">
+          <div class="shot" data-preview="Persona Template">
+            <img src="assets/01_Persona_Template_UX.png" alt="Persona Template" class="shot-thumb fill" />
+          </div>
+          <div class="shot" data-preview="User Journey Map">
+            <img src="assets/02_User_Journey_Map.png" alt="User Journey Map" class="shot-thumb fill" />
+          </div>
+          <div class="shot" data-preview="Usability Checklist">
+            <img src="assets/03_Usability_Checklist.png" alt="Usability Checklist" class="shot-thumb fill" />
+          </div>
+        </div>
+      </section>
+
+      <section id="download">
+        <div class="section-title">
+          <div>
+            <h2>Download Toolkit</h2>
+            <p>Download Template Toolkit disini!</p>
+          </div>
+        </div>
+
+        <div class="downloads">
+          <div class="card pad">
+            <p class="m0 mb10">Berikut paket dokumen yang dapat diunduh. Silakan sesuaikan formatnya (Docs/Sheets/PDF).</p>
+
+            <div class="dl-list">
+              <div class="dl-item">
+                <div class="left">
+                  <b>Persona Template</b>
+                  <span>Format: DOCX</span>
+                </div>
+                <a class="btn small" href="assets/01_Persona_Template_UX.docx">Download</a>
+              </div>
+
+              <div class="dl-item">
+                <div class="left">
+                  <b>User Journey Map Template</b>
+                  <span>Format: Sheet</span>
+                </div>
+                <a class="btn small" href="assets/02_User_Journey_Map.xlsx">Download</a>
+              </div>
+
+              <div class="dl-item">
+                <div class="left">
+                  <b>Usability Checklist</b>
+                  <span>Format: Sheet</span>
+                </div>
+                <a class="btn small" href="assets/03_Usability_Checklist.xlsx">Download</a>
+              </div>
+
+              <div class="dl-item">
+                <div class="left">
+                  <b>Panduan Penggunaan</b>
+                  <span>Format: PDF</span>
+                </div>
+                <a class="btn small" href="assets/PANDUAN_PENGGUNAAN_UX_RESEARCH_TOOLKIT.pdf">Download</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card pad">
+            <h3 class="h3">Kontak / Feedback</h3>
+            <p class="muted mt0 mb12">Isi form singkat untuk masukan atau permintaan akses (opsional).</p>
+
+            <form id="contactForm" action="https://formspree.io/f/mvzgaodn" method="POST">
+              <label class="label">Nama</label>
+              <input class="input" name="name" type="text" placeholder="Nama kamu" />
+
+              <div class="sp10"></div>
+
+              <label class="label">Email</label>
+              <input class="input" name="email" type="email" placeholder="nama@email.com" />
+
+              <div class="sp10"></div>
+
+              <label class="label">Pesan</label>
+              <textarea class="input" name="message" rows="4" placeholder="Masukan / pertanyaan singkat"></textarea>
+
+              <div class="sp12"></div>
+              <button class="btn secondary" type="submit">Kirim</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq">
+        <div class="section-title">
+          <div>
+            <h2>FAQ</h2>
+            <p>Jawaban cepat untuk pertanyaan umum.</p>
+          </div>
+        </div>
+
+        <div class="faq">
+          <details>
+            <summary>Apakah toolkit ini harus dipakai semuanya?</summary>
+            <p>Tidak harus. Kamu bisa mulai dari Persona, lalu Journey Map, lalu checklist usability. Hasilnya lebih kuat jika dipakai berurutan.</p>
+          </details>
+          <details>
+            <summary>Apakah ini menggantikan wawancara pengguna?</summary>
+            <p>Toolkit membantu prosesnya, bukan menggantikan. Data idealnya tetap berasal dari wawancara/observasi/survei kecil.</p>
+          </details>
+          <details>
+            <summary>Bagaimana kalau tim tidak punya banyak waktu?</summary>
+            <p>Pakai versi ringkas: 1 persona, 1 journey map 5 langkah, dan checklist usability untuk 1 skenario utama.</p>
+          </details>
+        </div>
+      </section>
+
+      <section id="tim">
+        <div class="section-title">
+          <div>
+            <h2>Tim</h2>
+            <p>Informasi tim pengembang.</p>
+          </div>
+        </div>
+
+        <div class="team">
+          <div class="person">
+            <div class="avatar" aria-hidden="true"><img src="assets/abid.png" alt="Abid" style="width: 100%; height: 100%; object-fit: cover; border-radius: 17%" /></div>
+            <div class="person-info">
+              <b>Abid Lu'ay Raihan Taufik</b>
+              <small class="role">Peneliti Literatur</small>
+              <small class="nim muted">NIM : 312210401</small>
+            </div>
+          </div>
+          <div class="person">
+            <div class="avatar" aria-hidden="true"><img src="assets/rafi.png" alt="Rafi" style="width: 100%; height: 100%; object-fit: cover; border-radius: 17%" /></div>
+            <div class="person-info">
+              <b>Rafi Maulana Firdaus</b>
+              <small class="role">Perancang Produk</small>
+              <small class="nim muted">NIM : 312210382</small>
+            </div>
+          </div>
+          <div class="person">
+            <div class="avatar" aria-hidden="true"><img src="assets/fajri.png" alt="Fajri" style="width: 100%; height: 100%; object-fit: cover; border-radius: 17%" /></div>
+            <div class="person-info">
+              <b>Afrizal Fajrianto Anggara Sakti</b>
+              <small class="role">Dokumentator & Presenter</small>
+              <small class="nim muted">NIM : 312210449</small>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="footer-row">
+          <div>© <span id="year"></span> UX Research Toolkit • Kelompok 1</div>
+          <div class="footer-actions">
+            <a class="btn small" href="#top">Kembali ke atas</a>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <div class="modal" id="modal" aria-hidden="true">
+      <div class="box" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <header>
+          <b id="modalTitle">Preview</b>
+          <button class="btn small" id="closeModalBtn" type="button">X</button>
+        </header>
+        <div class="content">
+          <div class="placeholder" id="modalBody">Tempat preview. Kamu bisa ganti ini dengan &lt;img&gt; atau embed PDF.</div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
