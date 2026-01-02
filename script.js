@@ -55,10 +55,57 @@ function closeModal() {
   document.body.style.overflow = "";
 }
 
-document.getElementById("openPreviewBtn").addEventListener("click", () => {
-  openModal(
-    "Contoh UX Research Toolkit",
-    `
+// Function untuk membuka gambar full screen dalam popup
+function openImagePopup(imgSrc, imgAlt) {
+  const popupModal = document.createElement("div");
+  popupModal.style.cssText = `
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+    cursor: zoom-out;
+  `;
+
+  const img = document.createElement("img");
+  img.src = imgSrc;
+  img.alt = imgAlt;
+  img.style.cssText = `
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+    border-radius: 8px;
+  `;
+
+  popupModal.appendChild(img);
+  document.body.appendChild(popupModal);
+
+  // Close popup saat diklik
+  popupModal.addEventListener("click", () => {
+    popupModal.remove();
+  });
+
+  // Close popup dengan Escape key
+  const handleEscape = (e) => {
+    if (e.key === "Escape") {
+      popupModal.remove();
+      document.removeEventListener("keydown", handleEscape);
+    }
+  };
+  document.addEventListener("keydown", handleEscape);
+}
+
+const openPreviewBtnEl = document.getElementById("openPreviewBtn");
+if (openPreviewBtnEl) {
+  openPreviewBtnEl.addEventListener("click", () => {
+    openModal(
+      "Contoh UX Research Toolkit",
+      `
     <div class="placeholder">
       <div>
         <b>Contoh struktur Toolkit</b><br><br>
@@ -71,12 +118,16 @@ document.getElementById("openPreviewBtn").addEventListener("click", () => {
       </div>
     </div>
   `
-  );
-});
+    );
+  });
+}
 
-document.getElementById("openPreviewBtn2").addEventListener("click", () => {
-  document.getElementById("openPreviewBtn").click();
-});
+const openPreviewBtn2El = document.getElementById("openPreviewBtn2");
+if (openPreviewBtn2El && openPreviewBtnEl) {
+  openPreviewBtn2El.addEventListener("click", () => {
+    openPreviewBtnEl.click();
+  });
+}
 
 closeModalBtn.addEventListener("click", closeModal);
 modal.addEventListener("click", (e) => {
@@ -86,27 +137,7 @@ document.addEventListener("keydown", (e) => {
   if (e.key === "Escape" && modal.style.display === "flex") closeModal();
 });
 
-// Screenshot cards open modal
-document.querySelectorAll(".shot").forEach((card) => {
-  card.addEventListener("click", () => {
-    const title = card.getAttribute("data-preview") || "Preview";
-    let bodyHtml = "";
-    let imgSrc = null;
-    if (title === "Persona Template") {
-      imgSrc = "assets/01_Persona_Template_UX.png";
-    } else if (title === "User Journey Map") {
-      imgSrc = "assets/02_User_Journey_Map.png";
-    } else if (title === "Usability Checklist") {
-      imgSrc = "assets/03_Usability_Checklist.png";
-    }
-    if (imgSrc) {
-      bodyHtml = `<div class=\"modal-img-wrap\"><img src=\"${imgSrc}\" alt=\"${title}\" class=\"modal-img\" tabindex=0></div>`;
-    } else {
-      bodyHtml = `<div class=\"placeholder\"></div>`;
-    }
-    openModal(title, bodyHtml);
-  });
-});
+// Preview links sudah menggunakan onclick langsung untuk membuka popup gambar
 
 // Download buttons (demo)
 document.querySelectorAll("[data-dl]").forEach((btn) => {

@@ -43,7 +43,6 @@
             <div class="hero-actions">
               <a class="btn primary" href="#download">Unduh Toolkit</a>
               <a class="btn" href="#komponen">Lihat Komponen</a>
-              <button class="btn secondary" id="openPreviewBtn" type="button">Lihat Contoh</button>
             </div>
 
             <div class="meta" aria-label="Info singkat">
@@ -199,20 +198,14 @@
         <div class="section-title">
           <div>
             <h2>Contoh Screenshot</h2>
-            <p>Klik salah satu kartu untuk melihat preview.</p>
+            <p>Klik untuk melihat preview gambar.</p>
           </div>
         </div>
 
-        <div class="shots">
-          <div class="shot" data-preview="Persona Template">
-            <img src="assets/01_Persona_Template_UX.png" alt="Persona Template" class="shot-thumb fill" />
-          </div>
-          <div class="shot" data-preview="User Journey Map">
-            <img src="assets/02_User_Journey_Map.png" alt="User Journey Map" class="shot-thumb fill" />
-          </div>
-          <div class="shot" data-preview="Usability Checklist">
-            <img src="assets/03_Usability_Checklist.png" alt="Usability Checklist" class="shot-thumb fill" />
-          </div>
+        <div style="display: flex; gap: 12px; flex-wrap: wrap">
+          <button class="btn" onclick="openImagePopup('assets/01_Persona_Template_UX.png', 'Persona Template')">👁️ Persona Template</button>
+          <button class="btn" onclick="openImagePopup('assets/02_User_Journey_Map.png', 'User Journey Map')">👁️ User Journey Map</button>
+          <button class="btn" onclick="openImagePopup('assets/03_Usability_Checklist.png', 'Usability Checklist')">👁️ Usability Checklist</button>
         </div>
       </section>
 
