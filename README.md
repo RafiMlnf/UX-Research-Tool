@@ -1,7 +1,7 @@
+<img width="2500" height="500" alt="headergithub" src="https://github.com/user-attachments/assets/2f913532-8241-4c43-8c08-b39739e357d6">
+
 # UX Research Toolkit (SE-02)
 
-![Project Banner](assets/preview-toolkit.png) > **"Riset UX yang rapi, konsisten, dan gampang dipakai."**
->
 > Sebuah toolkit komprehensif berisi template, checklist, dan panduan untuk membantu tim pengembang software melakukan riset pengguna yang terstruktur dan menghasilkan insight yang actionable.
 
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/username/repo)
