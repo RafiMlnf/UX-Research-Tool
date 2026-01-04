@@ -16,7 +16,7 @@ Project ini dikerjakan oleh kelompok 1 dengan pembagian peran:
 
 | NIM | Nama Anggota | Peran (Role) |
 | :--- | :--- | :--- |
-| 312210401 | Abid Lu'Ay Raihan Taufik | Peneliti Literatur |
+| 312210401 | Abid Lu'ay Raihan Taufik | Peneliti Literatur |
 | 312210382 | Rafi Maulana Firdaus | Perancang Produk | 
 | 312210449 | Afrizal Fajrianto Anggara Sakti | Dokumentator & Presenter |
 
